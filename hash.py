@@ -1,6 +1,7 @@
 import hashlib
+import sys
 
-with open('./nrfcloud.ca.pem', 'rb') as file:
+with open(sys.argv[1], 'rb') as file:
     cred_text = file.read()
 cred_text = cred_text.strip()
 cred_text = b"\n" + cred_text
