@@ -5,7 +5,7 @@ on:
   pull_request:
 
 jobs:
-  run-python-script:
+  run:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
