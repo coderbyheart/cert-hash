@@ -15,7 +15,7 @@ jobs:
           python-version: "3.10"
 
       - run: python3 hash.py ./nrfcloud.ca.pem > nrfcloud.ca.pem.sha256
-      - run: test `cat nrfcloud.ca.pem.sha256` = "6F3214857B50EDD5CAA9938188BBAB5952BF3E805724FD428DD166FFD79DDCCB"
+      - run: test `cat nrfcloud.ca.pem.sha256` = "B411BFD55AC7075B65FD64CC75A4AA7FA3513014BFF6C90D5E0AA34DE533917B"
 
       - run: python3 hash.py ./CLIENT_CERT.pem > CLIENT_CERT.pem.sha256
-      - run: test `cat CLIENT_CERT.pem.sha256` = "9081A557198ECB7DC7A0F73E73246B17E305C4D332154ED52597F2F5C84B444F"
+      - run: test `cat CLIENT_CERT.pem.sha256` = "4861CA4836312FEECB270E96E5133527AAC7BD99F94FA91FEBE532163685FC4D"
